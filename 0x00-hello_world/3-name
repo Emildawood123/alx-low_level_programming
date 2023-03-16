@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE && touch cisfun && chmod a+x cisfun
+gcc $CFILE -o  cisfun
