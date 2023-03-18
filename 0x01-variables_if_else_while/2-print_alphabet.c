@@ -15,6 +15,7 @@ int main(void)
 	{
 		putchar (alph[n]);
 	}
+	putchar('\n');
 	/* your code goes there */
 	return (0);
 }
