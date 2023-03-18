@@ -30,5 +30,5 @@ for (n = 1; n < 90; n++)
 		putchar(' ');
 	}
 }
-	Return (0);
+	return (0);
 }
