@@ -12,6 +12,11 @@ int main(void)
 		putchar(c + '0');
 	}
 
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c + '0');
+	}
+
 	putchar('\n');
 	return (0);
 }
