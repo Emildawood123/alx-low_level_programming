@@ -14,7 +14,7 @@ for (n = 1; n < 90; n++)
 	{
 	continue;
 	}
-	{
+	
 	if (n < 10)
 	{
 		putchar('0');
@@ -28,7 +28,6 @@ for (n = 1; n < 90; n++)
 	{
 		putchar(',');
 		putchar(' ');
-	}
 	}
 	return (0);
 }
