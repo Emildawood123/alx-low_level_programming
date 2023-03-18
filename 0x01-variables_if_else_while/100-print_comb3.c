@@ -9,14 +9,14 @@ int main(void)
 
 	for (n = 1; n < 90; n++)
 	{
-	if (n > 10 && n / 10 + '0' > n % 10 + '0')
+	if (n > 9 && n / 10 + '0' >= n % 10 + '0')
 	{
 		continue;
 	}
 	else
 	{
 	putchar(n < 10 ? '0' : n / 10 + '0');
-	putchar(n < 10 ? n : n % 10 + '0');
+	putchar(n < 10 ? n + '0' : n % 10 + '0');
 	if (n != 89)
 	{
 	putchar(',');
