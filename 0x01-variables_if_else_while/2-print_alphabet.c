@@ -8,7 +8,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char alph[26] = "abcdefghijkmnopqrstuvwxyz";
+	char alph[26] = "abcdefghijklmnopqrstuvwxyz";
 	int n;
 
 	for (n = 0; n < 26; n++)
