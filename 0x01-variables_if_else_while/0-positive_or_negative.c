@@ -6,21 +6,21 @@
 int main(void)
 {
 	int n;
-	char[50] cas;
+	char cas[50];
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n == 0)
 	{
-	cas = "zero"
+	cas = "zero";
 	}
 	else if (n > 0)
 	{
-	cas = "positive"
+	cas = "positive";
 	}
 	else 
 	{
-	cas = "negative"
+	cas = "negative";
 	}
 	printf("%d is %s", n, cas)
 	return (0);
