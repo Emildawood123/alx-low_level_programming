@@ -1,33 +1,29 @@
 #include <stdio.h>
-
 /**
- * main - that program print from 0 to 89
+ *main - that app count form one to eighty without and etc
  * Return: 0 (Success)
  */
-
 int main(void)
 {
 	int n;
-for (n = 1; n < 90; n++)
-{
-	if (n == 10 || n == 11)
+
+	for (n = 1; n < 90; n++)
 	{
-	continue;
-	}
-	if (n < 10)
+	if (n > 10 && n / 10 + '0' > n % 10 + '0')
 	{
-		putchar('0');
+		continue;
 	}
-	putchar(n < 10 ? n + '0' : n / 100 + '0');
-	if (n > 10)
+	else
 	{
-		putchar(n % 10 + '0');
-	}
+	putchar(n < 10 ? '0' : n / 10 + '0');
+	putchar(n < 10 ? n : n % 10 + '0');
 	if (n != 89)
 	{
-		putchar(',');
-		putchar(' ');
+	putchar(',');
+	putchar(' ');
 	}
-}
+	}
+	}
+	putchar('\n');
 	return (0);
 }
