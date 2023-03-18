@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
@@ -6,22 +7,20 @@
 int main(void)
 {
 	int n;
-	char cas[50];
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n == 0)
 	{
-	cas = "zero";
+	printf("%d is zero", n);
 	}
 	else if (n > 0)
 	{
-	cas = "positive";
+	printf("%d is positive", n);
 	}
 	else 
 	{
-	cas = "negative";
+	printf("%d is negative", n);
 	}
-	printf("%d is %s", n, cas)
 	return (0);
 }
