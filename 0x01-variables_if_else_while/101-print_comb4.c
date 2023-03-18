@@ -9,10 +9,13 @@ int main(void)
 
 	for(i = 567; i < 790; i++)
 	{
-	putchar(i % 10 +'0');
-	putchar(i / 10 + '0');
-	putchar(i / 100 +'0');
-	putchar(i / 1000 +'0');
+	if (i / 10 + '0' < i % 10 || i / 100 + '0' < (i / 10) % 10 + '0' || (i / 10)% 10 + '0' < i % 10 + '0')
+	{
+	continue;
+	}
+	else{
+	putchar(i % 10 + '0');
+	}
 	}
 	return (0);
 }
