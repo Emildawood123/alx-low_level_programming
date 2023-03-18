@@ -18,7 +18,7 @@ for (n = 1; n < 90; n++)
 	{
 		putchar('0');
 	}
-	putchar(n + '0');
+	putchar(n < 10 ? n + '0' : n / 100 + '0');
 	if (n > 10)
 	{
 		putchar(n % 10 + '0');
