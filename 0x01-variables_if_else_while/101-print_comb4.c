@@ -13,5 +13,5 @@ int main(void)
 	putchar(i % 100 +'0');
 	putchar(i % 1000 +'0');
 	}
-
+	return (0);
 }
