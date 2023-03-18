@@ -9,6 +9,7 @@ int main(void)
 {
 	int n;
 for (n = 1; n < 90; n++)
+{
 	if (n == 10 || n == 11)
 	{
 	continue;
