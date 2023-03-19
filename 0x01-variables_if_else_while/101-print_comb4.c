@@ -7,28 +7,21 @@ int main(void)
 {
 	int i;
 
-	for(i = 10; i < 790; i++)
+	for (i = 10; i < 790; i++)
 	{
 	if (i < 100 && i % 10 + '0' <= i / 10 + '0')
 	{
 	continue;
-	}	
-	else if (i % 10 + '0' <= (i / 10) % 10 + '0'|| (i / 10) % 10 + '0' <= i / 100 + '0')
+	}
+	else if (i % 10 + '0' <= (i / 10) % 10 + '0' || (i / 10) % 10 + '0' <= i / 100 + '0')
 	{
 	continue;
 	}
-	
-	else{
-	if (i < 100)
+	else
 	{
-	putchar('0');
-	}
-	putchar(i < 100 ? i / 10 + '0' : i / 100 + '0');
-	putchar(i < 100 ? i % 10 + '0' : (i / 10) % 10 + '0');
-	if (i >= 100)
-	{
+	putchar(i < 100 ? '0' : i / 100 + '0');
+	putchar(i < 100 ? i / 10 + '0' : (i / 10) % 10 + '0');
 	putchar(i % 10 + '0');
-	}
 	if (i != 789)
 	{
 	putchar(',');
@@ -36,5 +29,7 @@ int main(void)
 	}
 	}
 	}
+
+	putchar('\n');
 	return (0);
 }
