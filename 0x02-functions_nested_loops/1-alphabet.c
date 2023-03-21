@@ -1,16 +1,15 @@
-#include <unistd.h>
 #include "main.h"
+
 /**
- * print_alphabet - that function return alphabet lowercase
- *
- * Return: void.
+ * alphabet - that program print alphabet
+ * Return:void
  */
 void print_alphabet(void)
 {
-	char i;
-for (i = 'a'; i <= 'z'; i++)
+	char a;
+	for (a = 'a'; a <= 'z'; a++)
 	{
-	_putchar(i);
+	_putchar(a);
 	}
 	_putchar('\n');
 }
