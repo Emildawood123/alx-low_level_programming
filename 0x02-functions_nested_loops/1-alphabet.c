@@ -2,12 +2,13 @@
 
 /**
  * alphabet - that program print alphabet
- * Return:void
+ * Return: void
  */
+
 void print_alphabet(void)
 {
 	char a;
-	for (a = 'a'; a <= 'z'; a++)
+for (a = 'a'; a <= 'z'; a++)
 	{
 	_putchar(a);
 	}
