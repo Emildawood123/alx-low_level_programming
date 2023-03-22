@@ -24,7 +24,7 @@ void print_times_table(int n)
 	if (j == 0)
 	{
 	_putchar(res + '0');
-	if (n !=0 )
+	if (n != 0)
 	{
 	_putchar(res + ',');
 	}
