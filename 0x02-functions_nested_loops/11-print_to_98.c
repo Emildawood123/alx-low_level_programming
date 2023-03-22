@@ -48,7 +48,7 @@ void print_to_98(int n)
 		if (i < 10 && i >= 0)
 		{
 		_putchar(i + '0');
-		|
+		}
 		else if (i < 0)
 		{
 		_putchar('-');
