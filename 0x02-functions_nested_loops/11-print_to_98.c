@@ -20,7 +20,7 @@ void print_to_98(int n)
 		{
 		_putchar(i + '0');
 		}
-		else if (i > 10 && i < 100)
+		else if (i >= 10 && i < 100)
 		{
 		_putchar(i / 10 + '0');
 		_putchar(i % 10 + '0');
@@ -58,7 +58,7 @@ void print_to_98(int n)
 		_putchar(i * -1 % 10 + '0');
 		}
 		}
-                else if (i > 10 && i < 100)
+                else if (i >= 10 && i < 100)
                 {
                 _putchar(i / 10 + '0');
                 _putchar(i % 10 + '0');
