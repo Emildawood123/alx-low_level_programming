@@ -3,7 +3,7 @@
 /**
  * print_sign - that return - or + or zero
  * @n: this parameter to know is minus of right
- * Return: On success 
+ * Return: On success
  */
 int print_sign(int n)
 {
