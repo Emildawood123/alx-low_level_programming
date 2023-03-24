@@ -23,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-	printf("%d", i);
+	printf("%i", i);
 	}
 	if (i != 100)
 	{
@@ -31,5 +31,6 @@ int main(void)
 	}
 	}
 	putchar('\n');
+
 	return (0);
 }
