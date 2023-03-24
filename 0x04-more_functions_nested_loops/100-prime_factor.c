@@ -1,20 +1,22 @@
 #include <stdio.h>
-#include "main.h"
+#include <math.h>
 /**
  * main - that print the prime number
  * Return: alaways 0
  */
 int main(void)
 {
-	unsigned long int i, n = 612852475143;
+	long n = 612852475143;
+	long i, maxf;
+	double square = sqrt(n);
 
-	for (i = 3; i < 782849; i = i + 2)
+	for (i = 1; i <= square; i++)
 	{
-	while ((n % 1 == 0) && (n != i))
+	if (n % i == 0)
 	{
-	n = n / i;
+	maxf = n / i;
 	}
 	}
-	printf("%lu\n", n);
+	printf("%ld\n", maxf);
 	return (0);
 }
