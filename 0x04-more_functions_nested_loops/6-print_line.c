@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * print_line - that program prints _ for (para) times
+ * @n: para
+ * Return: void
+ */
+void print_line(int n)
+{
+	int i;
+
+	if (n > 0)
+	{
+	for (i = 0; i < n; i++)
+	{
+	_putchar('_');
+	}
+	}
+	_putchar('\n');
+}
