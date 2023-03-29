@@ -15,11 +15,8 @@ char *cap_string(char *a)
 	}
 	for (i = 0; i < len; i++)
 	{
-	if (a[i] == '\t')
-	{
-	a[i] = ' ';
-	}
-	if (a[i] == ' ' ||
+	if (a[i] == '\t'
+	a[i] == ' ' ||
 	a[i] == '.' ||
 	a[i] == '\n' ||
 	a[i] == ',' ||
