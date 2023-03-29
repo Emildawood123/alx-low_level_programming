@@ -25,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 	for (i = 0; i <= len2; i++)
 	{
 	dest[len1 + i] = src[i];
-	}		
+	}
 	}
 	else
 	{
@@ -34,6 +34,5 @@ char *_strncat(char *dest, char *src, int n)
 	dest[len1 + i] = src[i];
 	}
 	}
-	
-	return(dest);
+	return (dest);
 }
