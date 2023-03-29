@@ -18,6 +18,7 @@ char *rot13(char *a)
 	if (a[len] == bef[i])
 	{
 	a[len] = aft[i];
+	break;
 	}
 	}
 	len++;
