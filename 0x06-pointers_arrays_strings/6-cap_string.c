@@ -15,6 +15,10 @@ char *cap_string(char *a)
 	}
 	for (i = 0; i < len; i++)
 	{
+	if (i == 0 && (a[i] >= 97 && a[i] <= 122))
+	{
+	a[i] -= 32;
+	}
 	if (a[i] == '\t' ||
 	a[i] == ' ' ||
 	a[i] == '.' ||
