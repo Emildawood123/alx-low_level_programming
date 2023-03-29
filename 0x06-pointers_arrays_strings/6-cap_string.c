@@ -15,8 +15,11 @@ char *cap_string(char *a)
 	}
 	for (i = 0; i < len; i++)
 	{
-	if (a[i] == '\t'
-	a[i] == ' ' ||
+	if (a[i] == '\t')
+	{
+	a[i] == ' '
+	}
+	if (a[i] == ' ' ||
 	a[i] == '.' ||
 	a[i] == '\n' ||
 	a[i] == ',' ||
@@ -26,7 +29,8 @@ char *cap_string(char *a)
 	a[i] == '(' ||
 	a[i] == ')' ||
 	a[i] == '{' ||
-	a[i] == '}')
+	a[i] == '}' ||
+	a[i] == ';')
 	{
 	if (a[i + 1] >= 97 && a[i + 1] <= 122)
 	{
