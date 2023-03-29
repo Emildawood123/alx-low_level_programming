@@ -9,22 +9,18 @@ char *leet(char *a)
 	char *alpha = "aAeEoOtTlL";
 	char *nums = "4433007711";
 	int len = 0;
-	int i;
 	int j;
 
 	while (a[len])
 	{
-	len++;
-	}
-	for (i = 0; i < len; i++)
-	{
 	for (j = 0; j < 10; j++)
 	{
-	if (a[i] == alpha[j])
+	if (a[len] == alpha[j])
 	{
-	a[i] = nums[j];
+	a[len] = nums[j];
 	}
 	}
+	len++;
 	}
 
 	return (a);
