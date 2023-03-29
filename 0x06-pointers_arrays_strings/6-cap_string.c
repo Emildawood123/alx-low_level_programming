@@ -17,7 +17,7 @@ char *cap_string(char *a)
 	{
 	if (a[i] == '\t')
 	{
-	a[i] == ' '
+	a[i] == ' ';
 	}
 	if (a[i] == ' ' ||
 	a[i] == '.' ||
