@@ -6,12 +6,8 @@
  * @argv: that is char
  * Return: 0;
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	if (argc == 100)
-	{
-	printf("%s", argv[0]);
-	}
 	printf("%d\n", argc);
 	return (0);
 }
