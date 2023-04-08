@@ -1,4 +1,5 @@
-#define MAIN_H
+#ifndef INV_TREE_H 
+#define INV_TREE_H
 
 int _putchar(char c);
 int _islower(int c);
