@@ -7,5 +7,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-return (0);
+return (accept - s);
+return (s - accept);
 }
