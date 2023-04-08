@@ -46,6 +46,11 @@ int count = 1;
 int result = 1;
 if (argc > 3 || argc < 3)
 {
+printf("Error\n");
+return (1);
+}
+else
+{
 while (count != argc)
 {
 	result = result * _atoi(argv[count]);
@@ -54,9 +59,5 @@ while (count != argc)
 printf("%d\n", result);
 return (0);
 }
-else
-{
-printf("Error\n");
-return (1);
-}
+
 }
