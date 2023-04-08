@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int count = 1;
+	int count = 0;
 
 	while (count != argc)
 	{
