@@ -6,9 +6,8 @@
  * @argv: that is char
  * Return: file name
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	argc = 0;
-	printf("%s\n", argv[argc]);
+	printf("%s\n", argv[0]);
 	return (0);
 }

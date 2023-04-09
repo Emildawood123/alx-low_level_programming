@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 {
 int count = 1;
 int result = 1;
-if (argc > 3 || argc < 3)
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
