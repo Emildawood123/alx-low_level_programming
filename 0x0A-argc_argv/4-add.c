@@ -6,6 +6,7 @@
  * @s: that string
  * Return: sum
  */
+int isnum(char *s);
 int isnum(char *s)
 {
 	unsigned int i = 0;
