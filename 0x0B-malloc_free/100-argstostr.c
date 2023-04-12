@@ -14,11 +14,6 @@ char *argstostr(int ac, char **av)
 	int length;
 	char *new;
 
-	new = (char *)malloc(ac);
-	if (new == NULL)
-	{
-	return (NULL);
-	}
 	if (ac == 0 || av == NULL)
 	{
 	return (NULL);
@@ -32,6 +27,10 @@ char *argstostr(int ac, char **av)
 	}
 	length = length + ac;
 	new = (char *)malloc(length + 1);
+	if (new == NULL)
+	{
+	return (NULL);
+	}
 	for (i = 0; i < ac; i++)
 	{
 	for (y = 0; av[i][y]; y++)
