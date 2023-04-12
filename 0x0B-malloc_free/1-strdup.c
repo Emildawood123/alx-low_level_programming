@@ -20,14 +20,14 @@ char *_strdup(char *str)
 	i++;
 	}
 	nestr = (char *)malloc(i);
+	if (nestr == NULL)
+	{
+	return (NULL);
+	}
 	while (i != 0)
 	{
 	nestr[i - 1] = str[i - 1];
 	i--;
-	}
-	if (nestr == NULL)
-	{
-	return (NULL);
 	}
 	return (nestr);
 }
