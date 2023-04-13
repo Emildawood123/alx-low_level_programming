@@ -11,13 +11,13 @@ int *array_range(int min, int max)
 {
 	int i = 0;
 	int diff = max - min;
-	int *newarr;
+	int *newarr = 0;
 
 	if (min > max)
 	{
 	return (NULL);
 	}
-	newarr = (int *)malloc((diff * sizeof(int)) + sizeof(int));
+	newarr = malloc((diff * sizeof(int)) + sizeof(int));
 	if (newarr == NULL)
 	{
 	return (NULL);
