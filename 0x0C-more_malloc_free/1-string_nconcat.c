@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * string_nconcat - taht concat two string
+ * @s1: first
+ * @s2: second
+ * @n: num
+ * Return: new stinr
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int len1 = 0;
