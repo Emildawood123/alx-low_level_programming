@@ -10,13 +10,14 @@
 int *array_range(int min, int max)
 {
 	int i = 0;
+	int diff = max - min;
 	int *newarr = 0;
 
 	if (min > max)
 	{
 	return (NULL);
 	}
-	newarr = malloc(((max - min) * sizeof(int)) + sizeof(int));
+	newarr = (int *)malloc((diff * sizeof(int)) + sizeof(int));
 	if (newarr == NULL)
 	{
 	return (NULL);
