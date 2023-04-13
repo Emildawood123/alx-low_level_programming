@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < l ; i++)
 		if (i <= len1)
 			constr[i] = s1[i];
-		else
+		else if (i >= len2)
 		{
 		constr[i] = s2[a];
 		a++;
