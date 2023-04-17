@@ -20,7 +20,6 @@ if (name == NULL || owner == NULL)
 return (NULL);
 }
 dog = malloc(sizeof(dog_t));
-dog->age = age;
 while (name[lenn])
 	lenn++;
 dog->name = malloc(lenn + 1);
@@ -31,6 +30,7 @@ return (NULL);
 }
 for (i = 0; i < lenn; i++)
 	dog->name[i] = name[i];
+dog->age = age;
 while (owner[leno])
 	leno++;
 dog->owner = malloc(leno + 1);
