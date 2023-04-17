@@ -37,7 +37,7 @@ dog->owner = malloc(leno + 1);
 if (dog->owner == NULL)
 {
 free(dog);
-free(dog->owner);
+free(dog->name);
 return (NULL);
 }
 for (i = 0; i < lenn; i++)
