@@ -30,7 +30,7 @@ printf("%d", va_arg(arg, int));
 }
 else
 {
-printf("%s %d", separator, va_arg(arg, int));
+printf("%s%d", separator, va_arg(arg, int));
 }
 }
 }
