@@ -27,7 +27,14 @@ printf("%s", ptr);
 }
 else
 {
+if (separator == NULL)
+{
+printf("%s", ptr);
+}
+else
+{
 printf("%s%s", separator, ptr);
+}
 }
 }
 printf("\n");
