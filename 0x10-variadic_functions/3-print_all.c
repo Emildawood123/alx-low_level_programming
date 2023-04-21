@@ -7,4 +7,7 @@
  * @format: to access
  * Return: void
  */
-void print_all(const char * const format, ...);
+void print_all(const char * const format, ...)
+{
+
+};
