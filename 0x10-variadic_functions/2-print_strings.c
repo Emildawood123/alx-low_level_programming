@@ -16,7 +16,7 @@ char *ptr;
 va_start(arg, n);
 for (i = 0; i < n; i++)
 {
-ptr = (char*)va_arg(arg, char *);
+ptr = (char *)va_arg(arg, char *);
 if (ptr == NULL)
 {
 ptr = "(nil)";
