@@ -17,7 +17,7 @@ if (separator == NULL)
 {
 for (i = 0; i < n; i++)
 {
-printf("%d ", va_arg(arg, int));
+printf("%d", va_arg(arg, int));
 }
 }
 else
