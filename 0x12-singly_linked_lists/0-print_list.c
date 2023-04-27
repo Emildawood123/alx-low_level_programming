@@ -3,7 +3,7 @@
 /**
  * print_list - that return numbers of nodes
  * @h: that is head
- * return: numbers of nodes
+ * Return: numbers of nodes
  */
 size_t print_list(const list_t *h)
 {
