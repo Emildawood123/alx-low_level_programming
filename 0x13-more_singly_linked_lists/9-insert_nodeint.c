@@ -21,8 +21,8 @@ return (NULL);
 new->n = n;
 if (idx == 0)
 {
-new->next = *head;
-*head = new;
+new->next = item;
+item = new;
 }
 while (i < idx - 1)
 {
