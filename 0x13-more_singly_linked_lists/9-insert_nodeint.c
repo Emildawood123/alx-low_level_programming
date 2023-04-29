@@ -22,6 +22,10 @@ new->n = n;
 
 while (i < idx - 1)
 {
+if (item == NULL)
+{
+return (NULL);
+}
 item = item->next;
 i++;
 }
