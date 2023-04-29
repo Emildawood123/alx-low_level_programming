@@ -36,5 +36,5 @@ i++;
 }
 new->next = item->next;
 item->next = new;
-return (*head);
+return (new);
 }
