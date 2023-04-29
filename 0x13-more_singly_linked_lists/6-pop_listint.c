@@ -10,12 +10,8 @@ int pop_listint(listint_t **head)
 {
 int n;
 listint_t *item;
-item = malloc(sizeof(listint_t));
-if (item == NULL)
-{
-return (0);
-}
-if (*head == NULL)
+
+if (*head == NULL || head == NULL)
 {
 return (0);
 }
