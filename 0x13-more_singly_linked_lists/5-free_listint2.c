@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_listint- that function return new node
+ * free_listint2 - that function return new node
  * @head: head
  * Return: new
  */
