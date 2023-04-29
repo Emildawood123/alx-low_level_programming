@@ -21,6 +21,7 @@ return (0);
 }
 n = (*head)->n;
 item = (*head)->next;
+free(*head);
 *head = item;
 return (n);
 }
