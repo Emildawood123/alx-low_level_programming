@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
- *
+ * reverse_listint - that function return new
+ * @head: head
+ * Return: head
  */
 listint_t *reverse_listint(listint_t **head)
 {
@@ -17,5 +18,5 @@ new = *head;
 *head = item;
 }
 *head = new;
-return (new);
+return (head);
 }
