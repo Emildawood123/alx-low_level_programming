@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *
+ * print_binary - that return coverted dec
+ * @n: dec number
+ * Return: binary
  */
 void print_binary(unsigned long int n)
 {
