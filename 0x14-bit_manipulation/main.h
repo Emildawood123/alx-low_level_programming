@@ -5,4 +5,6 @@ void print_binary(unsigned long int n);
 int _putchar(char c);
 int _power(int n, int pow);
 int get_bit(unsigned long int n, unsigned int index);
+int set_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index);
 #endif
