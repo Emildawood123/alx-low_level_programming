@@ -23,6 +23,10 @@ return (-1);
 }
 file = open(filename, O_WRONLY | O_APPEND);
 w = write(file, text_content, len);
+if (text_content == NULL)
+{
+w = write(file, text_content, 0);
+}
 if (file == -1 || w == -1)
 {
 return (-1);
