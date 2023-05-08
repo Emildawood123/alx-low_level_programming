@@ -21,7 +21,7 @@ exit(97);
 }
 file_from = open(argv[1], O_RDONLY);
 r = read(file_from, buffer, 1024);
-file_to = open(argv[2], O_RDONLY | O_WRONLY | O_TRUNC, 0664);
+file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 if (file_from == -1 || r == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
