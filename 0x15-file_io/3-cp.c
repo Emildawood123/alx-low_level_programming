@@ -25,6 +25,7 @@ file_to = open(argv[2], O_RDONLY | O_WRONLY | O_TRUNC, 0664);
 if (file_from == -1 || r == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+free(buffer);
 exit(98);
 }
 file_from = open(argv[1], O_RDONLY | O_WRONLY);
@@ -32,12 +33,14 @@ w = write(file_to, buffer, r);
 if (w == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
+free(buffer);
 exit(99);
 }
 c = close(file_from);
 if (c == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
+free(buffer);
 exit(100);
 }
 free(buffer);
