@@ -12,10 +12,12 @@ int append_text_to_file(const char *filename, char *text_content)
 ssize_t file;
 ssize_t w;
 int len = 0;
-
+if (text_content != NULL)
+{
 while (text_content[len])
 {
 len++;
+}
 }
 if (filename == NULL)
 {
@@ -23,10 +25,6 @@ return (-1);
 }
 file = open(filename, O_WRONLY | O_APPEND);
 w = write(file, text_content, len);
-if (text_content == NULL)
-{
-w = write(file, text_content, 0);
-}
 if (file == -1 || w == -1)
 {
 return (-1);
