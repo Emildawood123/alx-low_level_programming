@@ -18,7 +18,7 @@ if (file == -1)
 {
 return (0);
 }
-buffer = malloc(letters);
+buffer = malloc(sizeof(char) *  letters);
 w = read(file, buffer, letters);
 t = write(0, buffer, w);
 free(buffer);
