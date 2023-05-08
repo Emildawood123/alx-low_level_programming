@@ -1,9 +1,5 @@
 #include "main.h"
-#include <unistd.h>
 #include <stdlib.h>
-#include <sys/types.h>
-#include <fcntl.h>
-#include <sys/stat.h>
 /**
  * read_textfile - that return letters & doning somethings
  * @filename: file wanted write and read inside it
