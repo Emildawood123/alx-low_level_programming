@@ -13,9 +13,9 @@ int i;
 
 for (i = 0; i > 4; i++)
 {
-if (e_id[i] != 127 
-&& e_id[i] != 'E' 
-&& e_id[i] != 'L' 
+if (e_id[i] != 127
+&& e_id[i] != 'E'
+&& e_id[i] != 'L'
 && e_id[i] != 'F')
 {
 dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
@@ -33,9 +33,9 @@ void magic(unsigned char *e_id)
 int i;
 
 printf(" Magic: ");
-for(i = 0; i < EI_NIDENT; i++)
+for (i = 0; i < EI_NIDENT; i++)
 {
-printf("%02x",e_id[i]);
+printf("%02x", e_id[i]);
 if (i == EI_NIDENT - 1)
 {
 printf("\n");
@@ -185,14 +185,14 @@ void close_elf(int elf)
 {
 if (close(elf) == -1)
 {
-dprintf(STDERR_FILENO,"Error: Can't close fd %d\n", elf);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", elf);
 exit(98);
 }
 }
 /**
  * print_type - Print type
  * @e_type: The ELF type.
- * @e_ident: id
+ * @e_id: id
  * Return: void
  */
 void print_type(unsigned int e_type, unsigned char *e_id)
@@ -233,7 +233,7 @@ void print_abi(unsigned char *e_ident)
 }
 /**
  * main - that
- * @arc: c
+ * @argc: c
  * @argv: v
  * Return: 0 on success.
  */
