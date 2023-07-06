@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+/**
+ * binary_to_uint - that funcation convert binary to dec
+ * @b: that is a parameter given binary number
+ * Return: dec
+ */
 unsigned int binary_to_uint(const char *b)
 {
 int len = 0;
