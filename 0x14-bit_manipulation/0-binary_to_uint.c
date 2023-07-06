@@ -12,7 +12,7 @@ int len = 0;
 int i = 0;
 int pow = 1;
 unsigned int dec = 0;
-if (b == NULL)
+if (!b)
 {
 return (0);
 }
