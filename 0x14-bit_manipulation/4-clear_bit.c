@@ -13,10 +13,9 @@ for (i = 0; i < index; i++)
 {
 num = num * 2;
 }
-if (*n < num)
+if (*n & (1 << index))
 {
-return (0);
-}
 *n = *n - num;
+}
 return (1);
 }
