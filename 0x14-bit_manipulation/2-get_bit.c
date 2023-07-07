@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
 /**
@@ -8,10 +7,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
+int new;
 if (n == 0)
 {
 return (-1);
 }
-int new = (n >> (index)) & 1;
+new = (n >> (index)) & 1;
 return (new);
 }
