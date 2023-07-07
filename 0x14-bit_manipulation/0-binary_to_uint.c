@@ -22,8 +22,8 @@ if (b[len] != '0' && b[len] != '1')
 {
 return (0);
 }
-len++;
 pow = pow * 2;
+len++;
 }
 pow = pow / 2;
 while (b[i])
