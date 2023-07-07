@@ -25,7 +25,6 @@ return (0);
 len++;
 pow = pow * 2;
 }
-len--;
 pow = pow / 2;
 while (b[i])
 {
