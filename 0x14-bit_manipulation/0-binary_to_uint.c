@@ -10,6 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 int len = 0;
 int i = 0;
+int f;
 int pow = 1;
 unsigned int dec = 0;
 if (!b)
@@ -22,10 +23,12 @@ if (b[len] != '0' && b[len] != '1')
 {
 return (0);
 }
-pow = pow * 2;
 len++;
 }
-pow = pow / 2;
+for (f = 0; f < len - 1; f++)
+{
+pow = pow  * 2;
+}
 while (b[i])
 {
 dec = dec + ((b[i] - '0') * pow);
