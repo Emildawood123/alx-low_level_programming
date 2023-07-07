@@ -8,12 +8,12 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned  int len = 0;
-unsigned int i = 0;
-unsigned int f;
+int len = 0;
+int i = 0;
+int f;
 long int pow = 1;
 unsigned long int dec = 0;
-if (!b)
+if (b == NULL)
 {
 return (0);
 }
