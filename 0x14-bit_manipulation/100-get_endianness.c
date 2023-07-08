@@ -2,9 +2,12 @@
 #include "main.h"
 int get_endianness(void)
 {
-	unsigned int x = 1;
-	char *c;
+	unsigned int e = 2;
+	char *ch;
+	int new;
 
-	c = (char *) &x;
-	return ((int) *c);
+	ch = (char *) &e;
+	printf("%s", ch);
+	new = (int) *ch;
+	return (new);
 }
