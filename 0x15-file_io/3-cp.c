@@ -22,7 +22,7 @@ ofrom = open(argv[1], O_RDONLY);
 buff = malloc(1024);
 if (buff == NULL)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 rfrom = read(ofrom, buff, 1024);
@@ -31,18 +31,14 @@ do {
 if (rfrom == -1 || ofrom == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+free(buff);
 exit(98);
-}
-buff = malloc(1024);
-if (buff == NULL)
-{
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-exit(99);
 }
 wto = write(oto, buff, rfrom);
 if (oto == -1 || wto == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+free(buff);
 exit(99);
 }
 rfrom = read(ofrom, buff, 1024);
