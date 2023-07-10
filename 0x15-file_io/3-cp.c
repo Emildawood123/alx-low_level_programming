@@ -62,5 +62,6 @@ c = close(file);
 if (c == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file);
+exit(100);
 }
 }
