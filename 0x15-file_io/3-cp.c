@@ -46,8 +46,8 @@ exit(99);
 }
 free(frombuff);
 free(tobuff);
-close(ofrom);
-close(oto);
+close_file(ofrom);
+close_file(oto);
 return (0);
 }
 /**
