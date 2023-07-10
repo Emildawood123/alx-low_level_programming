@@ -30,7 +30,7 @@ if (re == -1)
 return (0);
 }
 wr = write(STDOUT_FILENO, s, re);
-close(fp);
 free(s);
+close(fp);
 return (wr);
 }
