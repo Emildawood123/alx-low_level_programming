@@ -4,6 +4,7 @@
  * create_file - that funcation create a file
  * @filename: filename
  * @text_content: text_content
+ * Return: 1 or -1
  */
 int create_file(const char *filename, char *text_content)
 {
