@@ -43,6 +43,8 @@ if (oto == -1 || wto == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 }
+free(frombuff);
+free(tobuff);
 close(ofrom);
 close(oto);
 return (0);
