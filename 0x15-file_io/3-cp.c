@@ -26,6 +26,7 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 exit(99);
 }
 rfrom = read(ofrom, buff, 1024);
+do{ 
 if (rfrom == -1 || ofrom == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -44,6 +45,7 @@ if (oto == -1 || wto == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
+}while (rfrom > 0);
 free(buff);
 close_file(ofrom);
 close_file(oto);
