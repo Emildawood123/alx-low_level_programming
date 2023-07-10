@@ -10,10 +10,10 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fp;
+ssize_t fp;
 char *s;
-int  re;
-int wr;
+ssize_t re;
+ssize_t wr;
 if (filename == NULL)
 {
 return (0);
@@ -30,11 +30,7 @@ if (re == -1)
 return (0);
 }
 wr = write(STDOUT_FILENO, s, re);
-if (wr != re)
-{
-return (0);
-}
 close(fp);
 free(s);
-return (re);
+return (wr);
 }
