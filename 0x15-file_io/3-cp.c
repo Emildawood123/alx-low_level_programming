@@ -26,13 +26,13 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 exit(99);
 }
 rfrom = read(ofrom, buff, 1024);
-do{ 
+oto = open(argv[2], O_CREAT | O_WRONLY | O_APPEND | O_TRUNC, 0664);
+do {
 if (rfrom == -1 || ofrom == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-oto = open(argv[2], O_CREAT | O_WRONLY | O_APPEND | O_TRUNC, 0664);
 buff = malloc(1024);
 if (buff == NULL)
 {
@@ -45,7 +45,9 @@ if (oto == -1 || wto == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
-}while (rfrom > 0);
+rfrom = read(ofrom, buff, 1024);
+oto = open(argv[2], O_WRONLY | O_APPEND);
+} while (rfrom > 0);
 free(buff);
 close_file(ofrom);
 close_file(oto);
