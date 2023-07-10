@@ -17,7 +17,7 @@ if (fp == -1)
 {
 return (0);
 }
-s = malloc(sizeof(char) * letters);
+s = malloc(letters);
 re = read(fp, s, letters);
 wr = write(STDOUT_FILENO, s, re);
 free(s);
