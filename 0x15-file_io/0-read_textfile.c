@@ -14,10 +14,6 @@ ssize_t fp;
 char *s;
 ssize_t re;
 ssize_t wr;
-if (filename == NULL)
-{
-return (0);
-}
 fp = open(filename, O_RDONLY);
 if (fp == -1)
 {
