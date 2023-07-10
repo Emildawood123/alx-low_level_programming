@@ -28,7 +28,7 @@ if (re == -1)
 {
 return (0);
 }
-wr = write(1, s, re);
+wr = write(STDOUT_FILENO, s, re);
 if (wr != re)
 {
 return (0);
