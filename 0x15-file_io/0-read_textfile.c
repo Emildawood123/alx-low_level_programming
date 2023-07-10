@@ -23,7 +23,7 @@ if (fp == -1)
 {
 return (0);
 }
-s = malloc(letters);
+s = malloc(sizeof(char) * letters);
 re = read(fp, s, letters);
 if (re == -1)
 {
