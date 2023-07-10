@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+void close_file(int file);
 /**
  * main - that copy file to anther (content)
  * @argc: numbers of paras
