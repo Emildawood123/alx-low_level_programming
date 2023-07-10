@@ -25,10 +25,6 @@ return (0);
 }
 s = malloc(sizeof(char) * letters);
 re = read(fp, s, letters);
-if (re == -1)
-{
-return (0);
-}
 wr = write(STDOUT_FILENO, s, re);
 free(s);
 close(fp);
