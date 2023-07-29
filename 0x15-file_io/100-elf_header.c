@@ -117,8 +117,9 @@ void print_data(unsigned char *e_ident)
  *    */
 void print_version(unsigned char *e_ident)
 {
-	 printf(" Version:                           %d",
-			  e_ident[EI_VERSION]);
+	printf(" Version:");
+	printf("                           ")
+	printf("%d",e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -182,8 +183,9 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi(unsigned char *e_ident)
 {
-	printf(" ABI Version:                       %d\n",
-		e_ident[EI_ABIVERSION]);
+	printf(" ABI Version:");
+	printf("                       ");	
+	printf("%d\n",e_ident[EI_ABIVERSION]);
 }
 
 /**
