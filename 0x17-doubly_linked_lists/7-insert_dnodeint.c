@@ -27,6 +27,10 @@ while (i < idx - 1)
 temp = temp->next;
 i++;
 }
+if (temp == NULL)
+{
+return (NULL);
+}
 if (idx == 0)
 {
 new = add_dnodeint(h, n);
