@@ -44,7 +44,9 @@ i++;
 }
 if (idx == 0)
 {
-
+(*h)->prev = new;
+new->next = *h;
+*h = new;
 }
 new->next = temp->next;
 temp->next->prev = new;
