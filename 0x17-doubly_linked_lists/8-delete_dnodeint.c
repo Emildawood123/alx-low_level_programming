@@ -23,7 +23,7 @@ if (*head)
 }
 return (1);
 }
-while (count < index)
+while (count <= index)
 {
 temp = temp->next;
 count++;
@@ -40,6 +40,7 @@ return (1);
 else
 {
 temp->next->prev = temp->prev;
+temp->prev->next = temp->next;
 return (1);
 }
 }
