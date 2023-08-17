@@ -14,9 +14,7 @@ unsigned int i = 0;
 new = malloc(sizeof(dlistint_t));
 temp = *h;
 if (h == NULL)
-{
-return (NULL);
-}
+	return (NULL);
 if (new == NULL)
 {
 return (NULL);
@@ -36,7 +34,7 @@ if (idx == 0)
 new = add_dnodeint(h, n);
 return (new);
 }
-else if (temp->next == NULL)
+else if (temp != NULL && temp->next == NULL)
 {
 new = add_dnodeint_end(h, n);
 return (new);
@@ -47,8 +45,8 @@ new->next = temp->next;
 temp->next = new;
 new->prev = temp;
 temp->next->prev = new;
-return (new);
 }
+return (new);
 }
 /**
  * dlistint_len - that fun return length
