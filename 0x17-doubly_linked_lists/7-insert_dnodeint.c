@@ -14,6 +14,10 @@ size_t len = dlistint_len(*h);
 unsigned int i = 0;
 new = malloc(sizeof(dlistint_t));
 temp = *h;
+if (h == NULL)
+{
+return (NULL);
+}
 if (new == NULL)
 {
 return (NULL);
