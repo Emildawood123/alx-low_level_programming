@@ -30,6 +30,13 @@ if (idx > len - 1)
 {
 return (NULL);
 }
+if (temp == NULL && idx == 0)
+{
+*h = new;
+new->next = NULL;
+new->prev = NULL;
+return (new);
+}
 while (i != idx - 1)
 {
 temp = temp->next;
@@ -38,5 +45,5 @@ i++;
 new->next = temp->next;
 temp->next = new;
 new->prev = temp;
-return (*h);
+return (new);
 }

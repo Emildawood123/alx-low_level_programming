@@ -20,10 +20,10 @@ if (*head == NULL)
 *head = new;
 new->next = NULL;
 new->prev = NULL;
-return (*head);
+return (new);
 }
 new->prev = NULL;
 new->next = (*head);
-(*head) = new;
-return (*head);
+*head = new;
+return (new);
 }
