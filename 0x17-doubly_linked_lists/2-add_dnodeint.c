@@ -11,11 +11,17 @@ dlistint_t *new;
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 {
+free(new);
 return (NULL);
+}
+new->n = n;
+if (*head == NULL)
+{
+*head = new;
+return (new);
 }
 new->prev = NULL;
 new->next = (*head);
 (*head) = new;
-new->n = n;
 return (new);
 }
