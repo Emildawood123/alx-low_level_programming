@@ -37,14 +37,11 @@ return (-1);
 if (temp->next == NULL)
 {
 temp->prev->next = NULL;
-temp = NULL;
 return (1);
 }
 else
 {
-temp->prev->next = temp->next;
 temp->next->prev = temp->prev;
-temp = NULL;
-return (0);
+return (1);
 }
 }
