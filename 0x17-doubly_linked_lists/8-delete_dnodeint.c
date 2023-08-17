@@ -16,13 +16,11 @@ return (-1);
 }
 if (index == 0)
 {
-if ((*head)->next == NULL)
-{
-*head = NULL;
-return (1);
-}
 *head = (*head)->next;
+if (*head)
+{
 (*head)->prev = NULL;
+}
 return (1);
 }
 while (count < index)
