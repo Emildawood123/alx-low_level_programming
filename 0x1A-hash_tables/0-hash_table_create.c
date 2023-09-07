@@ -13,7 +13,6 @@ unsigned long int i = 0;
 hash_table_t *new = malloc(sizeof(hash_table_t));
 if (new == NULL)
 {
-free(new);
 return (NULL);
 }
 new->size = size;
@@ -23,10 +22,10 @@ if (new->array == NULL)
 free(new->array);
 return (NULL);
 }
-while(i < size)
+while (i < size)
 {
 new->array[i] = NULL;
 i++;
 }
-return new;
+return (new);
 }
