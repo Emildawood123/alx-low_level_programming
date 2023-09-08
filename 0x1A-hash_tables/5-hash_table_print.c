@@ -33,7 +33,7 @@ if (ht->array[z])
 new = ht->array[z];
 while (new)
 {
-if (!new->next && z == i)
+if (new->next == NULL && z == i)
 {
 printf("'%s: '%s'", new->key, new->value);
 }
