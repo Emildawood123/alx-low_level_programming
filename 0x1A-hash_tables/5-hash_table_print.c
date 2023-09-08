@@ -35,11 +35,11 @@ while (new)
 {
 if (!new->next && z == i)
 {
-printf("'%s : '%s'", new->key, new->value);
+printf("'%s: '%s'", new->key, new->value);
 }
 else
 {
-printf("'%s' : '%s', ", new->key, new->value);
+printf("'%s': '%s', ", new->key, new->value);
 }
 new = new->next;
 }
