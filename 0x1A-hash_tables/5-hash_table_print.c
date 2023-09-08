@@ -33,13 +33,13 @@ if (ht->array[z])
 new = ht->array[z];
 while (new)
 {
-if (new->next && i == z)
+if (!new->next && z == i)
 {
-printf("'%s' : '%s', ", new->key, new->value);
+printf("'%s : '%s'", new->key, new->value);
 }
 else
 {
-printf("'%s' : '%s'", new->key, new->value);
+printf("'%s' : '%s', ", new->key, new->value);
 }
 new = new->next;
 }
