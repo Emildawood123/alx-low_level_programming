@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "hash_tables.h"
 /**
- * hash_table_delete: free all
+ * hash_table_delete - free all
  * @ht: hash table
  * Return: void
 */
