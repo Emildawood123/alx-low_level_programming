@@ -11,12 +11,13 @@
 void hash_table_print(const hash_table_t *ht)
 {
 hash_node_t *new;
-unsigned long int i = ht->size;
+unsigned long int i;
 unsigned long int z = 0;
 if (ht == NULL)
 {
 return;
 }
+i = ht->size;
 while ((int)i >= 0)
 {
 if (ht->array[i])
