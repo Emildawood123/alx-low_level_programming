@@ -3,9 +3,9 @@ SRC = main.c school.c
 OBJ= $(patsubst %.c,%.o,$(SRC))
 NAME = school
 RM = rm
-CFLAG= -Wall -Werror -Wextra -pedantic
+CFLAGS= -Wall -Werror -Wextra -pedantic
 all: $(OBJ)
-	$(CC) $(OBJ) $(CFLAG) -o $(NAME)
+	$(CC) $(OBJ) $(CFLAGS) -o $(NAME)
 
 clean:
 	$(RM) -f *~ $(NAME)
