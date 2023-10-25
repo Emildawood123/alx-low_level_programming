@@ -4,6 +4,7 @@ OBJ= $(patsubst %.c,%.o,$(SRC))
 NAME= school
 RM= rm
 CFLAGS= -Wall -Werror -Wextra -pedantic
+ifneq ("$(wildcard m.h","")
 all: $(OBJ)
 	$(CC) $(OBJ) $(CFLAGS) -o $(NAME)
 
@@ -18,3 +19,4 @@ fclean:
 	$(RM) -f $(OBJ)
 
 re: oclean all
+endif
