@@ -3,6 +3,7 @@
 
 
 def island_perimeter(grid):
+    """function to know area of island"""
     res = 0
 
     for i in range(len(grid)):
