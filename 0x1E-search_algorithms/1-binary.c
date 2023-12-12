@@ -13,6 +13,10 @@ size_t start = 0;
 size_t end = size - 1;
 size_t mid = end / 2;
 size_t i;
+if (array == NULL)
+{
+return (-1);
+}
 while (start <= end)
 {
 printf("Searching in array: ");
