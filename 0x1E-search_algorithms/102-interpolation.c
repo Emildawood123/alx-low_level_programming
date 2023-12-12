@@ -9,38 +9,37 @@
 */
 int interpolation_search(int *array, size_t size, int value)
 {
-size_t low = 0;
-size_t high = size - 1;
-size_t pos = low + (((double)(high - low) /
-(array[high] - array[low])) * (value - array[low]));
+size_t start = 0;
+size_t end = size - 1;
+size_t mid;
 if (array == NULL)
 {
 return (-1);
 }
-pos = low + ((value - array[low]) * (high - low) /
-(array[high] - array[low]));
-if (pos > size)
+mid = start + ((value - array[start]) * (end - start) /
+(array[end] - array[start]));
+if (mid > size)
 {
-printf("checked array[%ld] is out of range\n", pos);
+printf("checked array[%ld] is out of range\n", mid);
 return (-1);
 }
-while (array[low] != array[high] && value >= array[low]
-&& value <= array[high])
+while (array[start] != array[end] && value >= array[start]
+&& value <= array[end])
 {
-pos = low + ((value - array[low]) * (high - low) /
-(array[high] - array[low]));
-printf("Value checked array[%ld] = [%d]\n", pos, array[pos]);
-if (array[pos] == value)
+mid = start + ((value - array[start]) * (end - start) /
+(array[end] - array[start]));
+printf("Value checked array[%ld] = [%d]\n", mid, array[mid]);
+if (array[mid] == value)
 {
-return (pos);
+return (mid);
 }
-else if (array[pos] < value)
+else if (array[mid] < value)
 {
-low = pos + 1;
+start = mid + 1;
 }
 else
 {
-high = pos - 1;
+end = mid - 1;
 }
 }
 return (-1);
