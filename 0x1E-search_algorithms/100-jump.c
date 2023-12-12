@@ -36,6 +36,6 @@ return (array[i]);
 }
 }
 printf("Value found between indexes [%ld] and [%ld]\n", start, end);
-printf("Value checked array[%ld] = [%ld]\n", start, start);
+printf("Value checked array[%ld] = [%d]\n", start, array[start]);
 return (-1);
 }
