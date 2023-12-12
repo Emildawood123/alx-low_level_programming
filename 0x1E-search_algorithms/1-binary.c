@@ -14,7 +14,7 @@ size_t end = size - 1;
 size_t mid;
 size_t i;
 mid = size % 2 == 0 ? (size / 2) - 1 : size / 2;
-while (start < end)
+while (start <= end)
 {
 printf("Searching in array: ");
 for (i = start; i <= end; i++)
